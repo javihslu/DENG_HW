@@ -144,7 +144,7 @@ docker-compose logs
 docker-compose down -v
 ```
 
-## Cleanup
+# Cleanup
 
 When you're done with the workshop, clean up Docker resources to free up disk space:
 
@@ -219,4 +219,10 @@ rm -rf __pycache__ .pytest_cache
 
 # Remove virtual environment (if using venv)
 rm -rf .venv
+```
+
+
+## Terraform
+```tf
+
 ```

@@ -11,21 +11,17 @@
 # 2. Run the container with the day argument:
 #    docker run --rm my_pipeline_image 1
 
-import sys 
+
+import sys
 import pandas as pd
 
-def main():
-    month = int(sys.argv[1]) if len(sys.argv) > 1 else 1
+print("arguments", sys.argv)
 
-    df = pd.DataFrame({ "day": [1, 2],
-                       "passengers": [2, 1],
-                       "month": [month, month],
-                       }) 
-    df.to_parquet("output.parquet", index=False)
-    print(df)
+day = int(sys.argv[1])
+print(f"Running pipeline for day {day}")
 
-if __name__ == "__main__":
-    main()
+df = pd.DataFrame({"A": [1,2], "B": [3,4]})
+print(df.head())
 
-# python pipeline.py 12 
-# ls -l output.parquet
+df.to_parquet(f"output_day_{day}.parquet")
+
