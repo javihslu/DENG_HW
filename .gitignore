@@ -227,3 +227,8 @@ serving_dir
 *.parquet
 *.csv
 keys/*
+
+
+# Temporary files
+.tmp/
+.temp/
