@@ -205,3 +205,10 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+
+data/*
+*.gz
+*.parquet
+template_pipeline/ny_taxi_postgres_data/*
+01_DOCKER_POSTGRESQL/pipeline/ny_taxi_postgres_data/18/docker/*
