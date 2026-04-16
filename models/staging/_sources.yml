@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: raw_data
+    description: "Raw data sources for NYT"
+    database: dengtaxi-489313 # Project ID
+    schema: taxi_ds_dataset #dataset name
+    tables:
+      - name: external_green_tripdata
