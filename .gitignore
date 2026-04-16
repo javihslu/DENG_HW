@@ -220,3 +220,6 @@ data/*
 *.parquet
 template_pipeline/ny_taxi_postgres_data/*
 01_DOCKER_POSTGRESQL/pipeline/ny_taxi_postgres_data/18/docker/*
+
+
+00_DENG_HW/keys/*
